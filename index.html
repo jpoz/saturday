@@ -28,6 +28,18 @@
 	color: #CC4555;
 }
 
+.highlight_green {
+  color: #58c472;
+}
+
+.highlight_yellow {
+  color: #cdc34f;
+}
+
+code {
+  color: #7f9ac5;
+}
+
 </style>
 <body class="overview">
 
@@ -96,7 +108,7 @@
   </section>
 
   <section>
-    <p>Bash is  for Nerds</p>
+    <p>Bash is an OS for Nerds</p>
     <table><tr>
         <td><img style='width: 100%;' src='terminal.png'
           /></td><td>
@@ -112,14 +124,39 @@
       <tr><td><code>pwd</code><td><td>Present working directory</td></tr>
       <tr><td><code>cd</code><td><td>Change Directory</td></tr>
       <tr><td><code>mkdir</code><td><td> Make Directory</td></tr>
-      <tr><td>DANGER ZONE</td></tr>
+      <tr><td class='highlight_red'>DANGER ZONE</td></tr>
       <tr><td><code>rm</code><td><td>Remove file</td></tr>
       <tr><td><code>sudo</code><td><td>Superuser</td></tr>
     </table>
+  </section>
 
+  <section>
+  <p><code>cd</code> Change Directory</p>
+    <table>
+      <tr><td><code>cd Pictures</code><td><td>&nbsp;Move into Pictures
+              directory</td></tr>
+      <tr><td><code>cd Music</code><td><td>&nbsp;Move into Music directory</td></tr>
+      <tr><td><code>cd ../</code><td><td>&nbsp;Move into the parent directory</td></tr>
+      <tr><td><code>cd ~</code><td><td>&nbsp;Move into the home directory</td></tr>
+    </table>
   </section>
 
 
+  <section>
+    <p class='highlight_red'>Hands On time!</p>
+    <ol>
+      <li>Open <span class='highlight_blue'>Terminal</span></li>
+      <li>Try out <code class='highlight_green'>ls</code> &
+        <code class='highlight_green'>pwd</code></span></li>
+      <li>Move into <span class='highlight_yellow'>Documents</span> directory: <code
+        class='highlight_green'>cd Documents</code></li>
+      <li>Make <span class='highlight_yellow'>Saturday</span> directory
+      in the <span class='highlight_yellow'>Documents</span> directory: <code
+        class='highlight_green'>mkdir Saturday</code></li>
+      <li>Move into <span class='highlight_yellow'>Saturday</span> directory: <code
+        class='highlight_green'>cd Saturday</code></li>
+    </ol>
+  </section>
 
 <section>
   <p><h1>Ruby intro
