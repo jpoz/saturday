@@ -21,11 +21,11 @@
 }
 
 .highlight_blue {
-	color: #35A4D4;
+  color: #35A4D4;
 }
 
 .highlight_red {
-	color: #CC4555;
+  color: #CC4555;
 }
 
 .highlight_green {
@@ -40,6 +40,12 @@ code {
   color: #7f9ac5;
 }
 
+.gist{font-size:13px;line-height:18px;margin-bottom:20px;width:100%}
+.gist pre{font-family:Menlo,Monaco,'Bitstream Vera Sans Mono','Courier New',monospace !important}
+.gist-meta{font-family:Helvetica,Arial,sans-serif;font-size:13px !important}
+.gist-meta a{color:#26a !important;text-decoration:none}
+.gist-meta a:hover{color:#0e4071 !important}
+
 </style>
 <body class="overview">
 
@@ -49,50 +55,104 @@ code {
     Ruffenach</a> & <a target=_blank href='http://twitter.com/jpoz'>James Pozdena</a>
 </section>
 
-	<section>
-	  <h1>Setup</h1>
-		<p>We are going to need a few tools to help you start programming.<p>
-	</section>
+  <section>
+    <h1>Setup</h1>
+    <p>We are going to need a few tools to help you start programming.<p>
+  </section>
 
-	<section>
-	  <h1>Textmate</h1>
-		<p>A lot of programming is editing text. There are hundreds of different text editing applications specifically made to write software with. We are going to use <a target=_blank href='http://macromates.com'>Textmate 2.0</a> which was recently open sourced.<p>
-	</section>
+  <section>
+    <h1>Textmate</h1>
+    <p>A lot of programming is editing text. There are hundreds of different text editing applications specifically made to write software with. We are going to use <a target=_blank href='http://macromates.com'>Textmate 2.0</a> which was recently open sourced.<p>
+  </section>
 
 <section>
   <h1>Chat</h1>
-	<p>We should probably find something easy to click on that would be a chatroom for all of us.<p>
+  <p>We should probably find something easy to click on that would be a chatroom for all of us.<p>
 </section>
 
 <section>
   <h1>Programming Introduction</h1>
-	<p>What do you think programming is?</p>
+  <p>What do you think programming is?</p>
 </section>
 
-	<section>
-	  <h1>Logic</h1>
-		<p>Let's start with <span class="highlight_blue">True</span> and <span class="highlight_red">False</span>.</p>
+  <section>
+    <h1>Logic</h1>
+    <p>Let's start with <span class="highlight_blue">True</span> and <span class="highlight_red">False</span>.</p>
+  </section>
+  
+  <section>
+    <h1>Logic Operators - AND</h1>
+    <p>We can do arithmatic with logic<p>
+		<table>
+			<tr><td><span class="highlight_blue">TRUE</span></td><td>&nbsp;&nbsp;&nbsp;&nbsp;AND</td><td><span class="highlight_blue">&nbsp;&nbsp;&nbsp;&nbsp;TRUE</span></td><td>&nbsp;&nbsp;&nbsp;&nbsp;=</td><td><span class="highlight_blue">&nbsp;&nbsp;&nbsp;&nbsp;TRUE</span></td><tr>
+			<tr><td><span class="highlight_blue">TRUE</span></td><td>&nbsp;&nbsp;&nbsp;&nbsp;AND</td><td><span class="highlight_red">&nbsp;&nbsp;&nbsp;&nbsp;FALSE</span></td><td>&nbsp;&nbsp;&nbsp;&nbsp;=</td><td><span class="highlight_red">&nbsp;&nbsp;&nbsp;&nbsp;FALSE</span></td><tr>
+				<tr><td><span class="highlight_red">FALSE</span></td><td>&nbsp;&nbsp;&nbsp;&nbsp;AND</td><td><span class="highlight_red">&nbsp;&nbsp;&nbsp;&nbsp;FALSE</span></td><td>&nbsp;&nbsp;&nbsp;&nbsp;=</td><td><span class="highlight_red">&nbsp;&nbsp;&nbsp;&nbsp;FALSE</span></td><tr>
+		</table>
+  </section>
+  
+  <section>
+    <h1>Logic Operators - OR</h1>
+    <p>We can do arithmatic with logic<p>
+		<table>
+			<tr><td><span class="highlight_blue">TRUE</span></td><td>&nbsp;&nbsp;&nbsp;&nbsp;OR</td><td><span class="highlight_blue">&nbsp;&nbsp;&nbsp;&nbsp;TRUE</span></td><td>&nbsp;&nbsp;&nbsp;&nbsp;=</td><td><span class="highlight_blue">&nbsp;&nbsp;&nbsp;&nbsp;TRUE</span></td><tr>
+			<tr><td><span class="highlight_blue">TRUE</span></td><td>&nbsp;&nbsp;&nbsp;&nbsp;OR</td><td><span class="highlight_red">&nbsp;&nbsp;&nbsp;&nbsp;FALSE</span></td><td>&nbsp;&nbsp;&nbsp;&nbsp;=</td><td><span class="highlight_blue">&nbsp;&nbsp;&nbsp;&nbsp;TRUE</span></td><tr>
+				<tr><td><span class="highlight_red">FALSE</span></td><td>&nbsp;&nbsp;&nbsp;&nbsp;OR</td><td><span class="highlight_red">&nbsp;&nbsp;&nbsp;&nbsp;FALSE</span></td><td>&nbsp;&nbsp;&nbsp;&nbsp;=</td><td><span class="highlight_red">&nbsp;&nbsp;&nbsp;&nbsp;FALSE</span></td><tr>
+		</table>
+  </section>
+  
+  <section>
+    <h1>Data Types</h1>
+    <p><span class="highlight_blue">TRUE</span> and <span class="highlight_red">FALSE</span> were so useful they become a regular type of data. What are some other types of data?</p>
+  </section>
+  
+  <section>
+    <h1>Data Types</h1>
+    <p>In general there are 3 data types in any programming language.<p>
+    <table>
+      <tr><td>Boolean</td><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<span class="highlight_blue">TRUE</span> and <span class="highlight_red">FALSE</span>)</td></tr>
+      <tr><td>Number</td><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(1.432 or -36 or π)</td></tr>
+			<tr><td>Strings</td><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;('A' or 'Collin' or 'Hello World')</td></tr>
+		</table>
+  </section>
+	
+  <section>
+    <h1>Variables</h1>
+		With these types of data in mind, it is useful to be able to hold that data as something we can reference in different places. A popular concept in programming for this is a variable. 
 	</section>
 	
-	<section>
-	  <h1>Logic Operators</h1>
-		<p>We can do arithmatic with logic<p>
-		<p><span class="highlight_blue">TRUE</span> AND <span class="highlight_blue">TRUE</span> = <span class="highlight_blue">TRUE</span>
-		<p><span class="highlight_blue">TRUE</span> AND <span class="highlight_red">FALSE</span> = <span class="highlight_red">FALSE</span>
-		<p><span class="highlight_blue">FALSE</span> AND <span class="highlight_red">FALSE</span> = <span class="highlight_red">FALSE</span>
+  <section>
+    <h1>Variables</h1>
+		Creating a variable generally has these parts.
+		<ol>
+			<li style="font-size:40px">Declare Variable Type (Optional in some languages)</li>
+			<li style="font-size:40px">Give variable a name</li>
+			<li style="font-size:40px">Give variable a value</li>
+		</ol>
+		<hr>
+		<script src="https://gist.github.com/cruffenach/5282798.js"></script>
 	</section>
 	
-	<section>
-	  <h1>Logic Operators</h1>
-		<p>We can do arithmatic with logic<p>
-		<p><span class="highlight_blue">TRUE</span> OR <span class="highlight_blue">TRUE</span> = <span class="highlight_blue">TRUE</span>
-		<p><span class="highlight_blue">TRUE</span> OR <span class="highlight_red">FALSE</span> = <span class="highlight_blue">TRUE</span>
-		<p><span class="highlight_red">FALSE</span> OR <span class="highlight_red">FALSE</span> = <span class="highlight_red">FALSE</span>
+  <section>
+    <h1>Quick Note</h1>
+		<script src="https://gist.github.com/cruffenach/5282798.js"></script>
+		<span style="align-self:center">&uarr;</span>
 	</section>
 	
-	<section>
-	  <h1>Data Types</h1>
-	</section>
+  <section>
+    <h1>Functions</h1>
+    <p>Now that we have data types we need to have something that let's us do some kinda operation using those types. We call these functions.<p>
+		<p>Let's make a function that will add 2 numbers together</p>
+		<script src="https://gist.github.com/cruffenach/5279311.js"></script>
+  </section>
+	
+  <section>
+    <h1>Functions</h1>
+  	<script src="https://gist.github.com/cruffenach/5279335.js"></script>
+		<hr>
+		Output:
+		</br>
+		<span style="font-family:courier">The combined age is 54</span>
+  </section>
 
 <section>
   <p><h1>Bash intro
