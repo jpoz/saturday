@@ -1,4 +1,4 @@
-saturday = "Saturday Academy" 
+saturday = "Saturday Academy"
 name = "James"
 
 title = "#{name} is at #{saturday}"
